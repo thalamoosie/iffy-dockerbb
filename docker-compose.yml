@@ -15,5 +15,15 @@ services:
       - mongodata:/data/db
       - ./mongo/mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js
       - ./mongo/mongod.conf:/etc/mongod.conf:ro
+
+  # nodebb:
+  #   image: nodecustom
+  #   container_name: nodebb-test
+  #   ports:
+  #     - 4567:4567
+  #   restart: always
+  #   depends_on:
+  #     - mongo
+
 volumes:
   mongodata:

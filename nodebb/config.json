@@ -1,0 +1,37 @@
+{
+  "url": "http://localhost",
+  "port": "4567",
+
+  "admin": {
+    "username": "placeholder",
+    "email": "placeholder",
+    "password": "placeholder",
+    "password:confirm": "placeholder"
+  },
+
+  "database": "mongo",
+  "mongo": {
+    "host": "127.0.0.1",
+    "port": "27017",
+    "username": "placeholder",
+    "password": "placeholder",
+    "database": "placeholder",
+    "ssl": "false"
+  }
+}
+// Config is not valid json, splits here - trying to figure out how to feed config to nodebb
+{
+    "url": "http://127.0.0.1:4567",
+    "secret": "abcdef-place-holder1234",
+    "admin:username": "placeholder",
+    "admin:email": "placeholder",
+    "admin:password": "placeholder",
+    "admin:password:confirm": "placeholder",
+
+    "database": "mongo",
+    "mongo:host": "127.0.0.1",
+    "mongo:port": 27017,
+    "mongo:username": "",
+    "mongo:password": "",
+    "mongo:database": "nodebb"
+  }
