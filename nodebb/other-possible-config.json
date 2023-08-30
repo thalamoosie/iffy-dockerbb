@@ -1,0 +1,21 @@
+{
+    "url": "http://localhost",
+    "port": "4567",
+  
+    "admin": {
+      "username": "placeholder",
+      "email": "placeholder",
+      "password": "placeholder",
+      "password:confirm": "placeholder"
+    },
+  
+    "database": "mongo",
+    "mongo": {
+      "host": "127.0.0.1",
+      "port": "27017",
+      "username": "placeholder",
+      "password": "placeholder",
+      "database": "placeholder",
+      "ssl": "false"
+    }
+}

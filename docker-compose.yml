@@ -10,10 +10,14 @@ services:
       MONGO_INITDB_ROOT_USERNAME: ${MONGO_INITDB_ROOT_USERNAME}
       MONGO_INITDB_ROOT_PASSWORD: ${MONGO_INITDB_ROOT_PASSWORD}
       MONGO_INITDB_DATABASE: ${MONGO_INITDB_DATABASE}
+      NODEBB_USERNAME: ${NODEBB_USERNAME}
+      NODEBB_PASSWORD: ${NODEBB_PASSWORD}
+      NODEBB_DATABASE: ${NODEBB_DATABASE}
     restart: always
     volumes:
       - mongodata:/data/db
-      - ./mongo/mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js
+      # - ./.env:/docker-entrypoint-initdb.d/.env:ro
+      - ./mongo/mongo-init.sh:/docker-entrypoint-initdb.d/mongo-init.sh
       - ./mongo/mongod.conf:/etc/mongod.conf:ro
 
   # nodebb:
